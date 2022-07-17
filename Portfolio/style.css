@@ -1,0 +1,66 @@
+body {
+    margin: auto;
+    padding: auto;
+    padding-top: 30px;
+    background-color: #fbf777;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: aquamarine;
+    }
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+#heading {
+    -webkit-animation: moving 5s infinite;
+    animation: moving 5s infinite;
+    position: relative;
+    animation-name: moving;
+    text-align: center;
+    padding-left: 15px;
+    font-size: 20px;
+    color: crimson;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-justify: auto;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(550px);
+    }
+}
+
+#description {
+    padding-left: 40px;
+    padding-right: 35px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#button-container {
+    text-align: center;
+    justify-content: center;
+}
+
+#button-container {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: 1.7px solid lightcoral;
+    font-size: 20px;
+    cursor: pointer;
+    padding-top: 5px;
+}

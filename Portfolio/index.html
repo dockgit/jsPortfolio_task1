@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!---script is here- function of onload page--->
+
+    <script>
+        //display image after 3 sec
+        function imgdiv() {
+            document.getElementById("box").style.visibility = "visible";
+        }
+        setTimeout("imgdiv()", 3000)
+
+        //display heading after 6 sec
+        function headdiv() {
+            document.getElementById("Head").style.visibility = "visible";
+        }
+        setTimeout("headdiv()", 6000)
+
+        //display paragraph aftew few sec
+        function descrpdiv() {
+            document.getElementById("Desc").style.visibility = "visible";
+        }
+        setTimeout("descrpdiv()", 9000)
+
+        //change button color
+        function changecolor(element, color) {
+            document.getElementById("button-container").style.color = color
+            setTimeout(function() {
+                changecolor(element, "#00ff00")
+            }, 4000)
+        }
+    </script>
+
+
+
+    <title>Basic Html</title>
+
+    <!--inforamation about the documnet and character encoding(page, description, name)-->
+    <meta charset="UTF-8">
+    <!--external style sheet-->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <!---call function here   -->
+    <div>
+        <img width="170" id="box" src="images/profile_pic_3.png" style="visibility: hidden;" />
+    </div>
+
+    <div id="heading">
+        <h1 id="Head" style="visibility: hidden;">Elon Musk</h1>
+    </div>
+
+
+    <div id="description">
+        <p id="Desc" style="visibility: hidden;">ELON MUSK is a South-African born American industrial Engineer, Enterprenuer, who co-founded paypal and founded Aerospace transportation services company spaceX. He is also one of the early investors in Tesla, an electric car company.Now he is
+            the cheif Executive Officer of the firm as well. He tends to be ambitious, fast-paced, critical and efficient at work. As a Type-One, Elon tends to be rational, principle and judicial. Elon usually has desire for justice and equality and is
+            motivated by a strongs ense of right and wrong.
+        </p>
+    </div>
+
+    <div>
+        <button id="button-container" onclick="changecolor()"> click Me! </button>
+    </div>
+
+
+</body>
+
+</html>
